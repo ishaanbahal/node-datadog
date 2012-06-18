@@ -2,15 +2,15 @@ var util = require('util')
 var should = require('should')
 var DataDog = require('../')
 
+var ddApiKey = process.env.DATADOG_API_KEY
+var ddAppKey = process.env.DATADOG_APP_KEY
 
-var ddog = new DataDog( process.env.DATADOG_API_KEY, process.env.DATADOG_APP_KEY)
+
+var ddog = new DataDog( ddApiKey, ddAppKey)
 
 
 describe('The node-datadog Metrics Series integration ', function() {
 
-  before(function(done){
-      
-  })
 
   it('should be able to post a Counter', function(done) {
 
