@@ -4,7 +4,12 @@
    "author": "Singly <nerds@singly.com>",
    "main": "index",
    "dependencies": {
-      "request": "*"
+      "request" : "*",
+      "should"  : "0.6.3"
    },
+   "devDependencies": {
+       "should": "*",
+       "mocha": "*"
+     },
    "license": "MIT"
 }
