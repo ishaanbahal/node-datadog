@@ -28,7 +28,7 @@ dd.postSeries({
     "series": [{
         "metric": "test.ddagent.series",
         "points": [
-            [Date.now(), 1]
+            [Date.now()/1000, 1]
         ],
         "type": "counter",
         "tags": ["test", "test-series"]
@@ -47,7 +47,7 @@ dd.postSeries({
     "series": [{
         "metric": "test.ddagent.series",
         "points": [
-            [Date.now(), 1]
+            [Date.now()/1000, 1]
         ],
         "type": "gauge",
         "tags": ["test", "test-series"]
