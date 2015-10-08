@@ -8,7 +8,7 @@ var DataDog = function(apiKey, applicationKey, opt_apiBaseUrl) {
    this.apiBaseUrl = opt_apiBaseUrl;
    this.apiKey = apiKey;
    this.applicationKey = applicationKey;
-   
+
 };
 
 DataDog.prototype.postEvent = function(event, callback) {
@@ -22,7 +22,7 @@ DataDog.prototype.postEvent = function(event, callback) {
    },
    callback).on('error', function(e) {
     console.log(e.message);
-};
+});
 
 DataDog.prototype.postSeries = function(series, callback) {
    request.post({
@@ -35,7 +35,7 @@ DataDog.prototype.postSeries = function(series, callback) {
    },
    callback).on('error', function(e) {
     console.log(e.message);
-};
+});
 
 DataDog.prototype.search = function(queryString, callback) {
    request.get({
@@ -47,6 +47,6 @@ DataDog.prototype.search = function(queryString, callback) {
    },
    callback).on('error', function(e) {
     console.log(e.message);
-};
+});
 
 module.exports = DataDog;
